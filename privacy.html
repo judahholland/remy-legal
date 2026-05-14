@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Remy</title>
+  <style>
+    @font-face {
+      font-family: 'DM Sans';
+      src: url('/fonts/DMSans.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'SandeMore';
+      src: url('/fonts/SandeMoreDemo-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --color-bg: #F2EDE6;
+      --color-bg-secondary: #E8E0D4;
+      --color-card: #FFFFFF;
+      --color-accent: #3D4F5C;
+      --color-accent-secondary: #D7E4E0;
+      --color-text: #221E1A;
+      --color-text-secondary: #9E8E7E;
+      --color-text-muted: #C8BCA8;
+      --color-border: #DDD5C8;
+
+      --font-display: 'SandeMore', Georgia, serif;
+      --font-editorial: Georgia, 'Times New Roman', Times, serif;
+      --font-ui: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --radius-card: 16px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrap {
+      flex: 1;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    @media (min-width: 640px) {
+      .page-wrap {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+    }
+
+    /* Wordmark */
+    .wordmark {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--color-text);
+      letter-spacing: -0.01em;
+      display: block;
+      margin-bottom: 12px;
+      text-decoration: none;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-block;
+      font-family: var(--font-ui);
+      font-size: 0.9375rem;
+      color: var(--color-accent);
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Page heading */
+    h1 {
+      font-family: var(--font-editorial);
+      font-weight: 600;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.25;
+      color: var(--color-text);
+      margin-bottom: 8px;
+      max-width: 65ch;
+    }
+
+    .meta {
+      font-family: var(--font-ui);
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 48px;
+    }
+
+    /* Body content */
+    .content {
+      max-width: 65ch;
+    }
+
+    .content h2 {
+      font-family: var(--font-editorial);
+      font-weight: 600;
+      font-size: clamp(1.25rem, 4vw, 1.5rem);
+      line-height: 1.3;
+      color: var(--color-text);
+      margin-top: 48px;
+      margin-bottom: 16px;
+    }
+
+    .content h3 {
+      font-family: var(--font-ui);
+      font-weight: 600;
+      font-size: 1.0625rem;
+      color: var(--color-text);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .content p {
+      font-size: 1.0625rem;
+      color: var(--color-text);
+      margin-bottom: 16px;
+    }
+
+    .content ul,
+    .content ol {
+      font-size: 1.0625rem;
+      color: var(--color-text);
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    .content li {
+      margin-bottom: 6px;
+    }
+
+    .content strong {
+      font-weight: 600;
+      color: var(--color-text);
+    }
+
+    .content em {
+      font-style: italic;
+    }
+
+    /* Responsive table */
+    .table-wrapper {
+      overflow-x: auto;
+      margin-bottom: 16px;
+      margin-top: 8px;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+    }
+
+    .content table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--font-ui);
+      font-size: 0.9375rem;
+      min-width: 500px;
+    }
+
+    .content table thead {
+      background-color: var(--color-bg-secondary);
+    }
+
+    .content table th {
+      text-align: left;
+      font-weight: 600;
+      padding: 12px 16px;
+      color: var(--color-text);
+      border-bottom: 1px solid var(--color-border);
+      white-space: nowrap;
+    }
+
+    .content table td {
+      padding: 12px 16px;
+      color: var(--color-text);
+      vertical-align: top;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .content table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .content table tbody tr:nth-child(even) {
+      background-color: var(--color-bg);
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--color-border);
+      margin-top: auto;
+      padding: 32px 24px;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      font-family: var(--font-ui);
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .footer-inner {
+        padding-left: 48px;
+        padding-right: 48px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .footer-inner a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .footer-inner a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="page-wrap">
+      <a href="/" class="wordmark" aria-label="Remy home">Remy</a>
+      <a href="/" class="back-link">&larr; Back</a>
+
+      <h1>Privacy Policy for Remy</h1>
+      <p class="meta">
+        <strong>Effective Date:</strong> 05/14/2026<br>
+        <strong>Last Updated:</strong> 05/14/2026
+      </p>
+
+      <div class="content">
+        <p>This Privacy Policy describes how Remy (&ldquo;Remy,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares information when you use the Remy mobile application (the &ldquo;App&rdquo;). Remy is operated by [YOUR LEGAL NAME], a sole proprietor based in Florida, United States.</p>
+
+        <p>If you have any questions about this policy, contact us at <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>.</p>
+
+        <h2>1. Summary</h2>
+        <p>Remy is a personal recipe organizer. We collect the information needed to create your account, store the recipes you choose to save, and process recipe imports from URLs, photos, and pasted text. We do not sell your personal information, we do not use it for advertising, and we do not share your recipes publicly.</p>
+
+        <h2>2. Information We Collect</h2>
+
+        <h3>2.1 Information you provide directly</h3>
+        <ul>
+          <li><strong>Account information:</strong> your email address and password when you create an account. If you sign in with Google, we receive your email address and basic profile information from Google.</li>
+          <li><strong>Profile information:</strong> your chosen username, first name, last name, and an optional profile photo (avatar) you upload.</li>
+          <li><strong>Recipe content:</strong> the recipes you save, including titles, descriptions, ingredients, instructions, notes, categories, servings, prep and cook times, source URLs, and recipe photos you upload or capture.</li>
+          <li><strong>Recipe import sources:</strong> URLs you paste, text you paste, and photos of recipes you capture or select, which we process to extract structured recipe data.</li>
+          <li><strong>Preferences:</strong> your unit preference (imperial or metric), appearance preference (light, dark, or system), and home-screen display preferences.</li>
+          <li><strong>Communications:</strong> if you email us for support, we receive the contents of your message and your email address.</li>
+        </ul>
+
+        <h3>2.2 Information collected automatically</h3>
+        <ul>
+          <li><strong>Authentication and session data:</strong> when you sign in, our authentication provider issues session tokens and records sign-in events for security purposes.</li>
+          <li><strong>Subscription data:</strong> if you subscribe to Remy Unlimited, our subscription processor records your subscription status, purchase events, renewal status, and a pseudonymous user identifier. We do <strong>not</strong> receive your credit card number or payment details &mdash; those are handled by Apple&rsquo;s App Store.</li>
+          <li><strong>Device information for crash and error logs:</strong> if the App crashes or encounters an error, basic technical information (device model, operating system version, App version, and error details) may be recorded so we can diagnose issues.</li>
+        </ul>
+
+        <h3>2.3 Information we do <strong>not</strong> collect</h3>
+        <ul>
+          <li>We do not collect precise location data.</li>
+          <li>We do not access your contacts.</li>
+          <li>We do not use third-party advertising identifiers (IDFA).</li>
+          <li>We do not track your activity across other apps or websites.</li>
+        </ul>
+
+        <h2>3. Permissions the App Requests</h2>
+        <ul>
+          <li><strong>Camera:</strong> to capture photos of physical recipes or your profile picture. Used only when you actively choose to take a photo.</li>
+          <li><strong>Photo Library:</strong> to select existing photos of recipes or profile pictures. Used only when you actively choose to select a photo.</li>
+        </ul>
+        <p>You can revoke these permissions at any time in your device&rsquo;s Settings.</p>
+
+        <h2>4. How We Use Your Information</h2>
+        <p>We use the information described above to:</p>
+        <ul>
+          <li>Create and maintain your account (legal basis: <strong>contract</strong>).</li>
+          <li>Save, organize, and display your recipes and preferences (legal basis: <strong>contract</strong>).</li>
+          <li>Convert URLs, pasted text, and recipe photos into structured recipes using AI processing (legal basis: <strong>contract</strong>).</li>
+          <li>Process your subscription and import limit (legal basis: <strong>contract</strong>).</li>
+          <li>Respond to your support requests (legal basis: <strong>legitimate interest</strong>).</li>
+          <li>Detect and prevent abuse, fraud, and security incidents (legal basis: <strong>legitimate interest</strong>).</li>
+          <li>Comply with legal obligations (legal basis: <strong>legal obligation</strong>).</li>
+        </ul>
+        <p>We do not use your data for advertising, profiling, or sale to third parties.</p>
+
+        <h2>5. Third-Party Service Providers</h2>
+        <p>Remy uses the following service providers (&ldquo;sub-processors&rdquo;) to operate the App. Each is contractually obligated to process your data only on our instructions.</p>
+
+        <div class="table-wrapper" role="region" aria-label="Third-party service providers">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Provider</th>
+                <th scope="col">Purpose</th>
+                <th scope="col">Data Handled</th>
+                <th scope="col">Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Supabase, Inc.</strong></td>
+                <td>Account authentication, database hosting, file storage</td>
+                <td>Email, password hash, profile, recipes, photos, session tokens</td>
+                <td>United States</td>
+              </tr>
+              <tr>
+                <td><strong>OpenAI, L.L.C.</strong></td>
+                <td>AI-powered extraction of recipe content from URLs, photos, and pasted text</td>
+                <td>The URL, image, or text you submit for import (no account identifiers attached)</td>
+                <td>United States</td>
+              </tr>
+              <tr>
+                <td><strong>RevenueCat, Inc.</strong></td>
+                <td>Subscription management and entitlement tracking</td>
+                <td>Pseudonymous user ID, subscription events, purchase status</td>
+                <td>United States</td>
+              </tr>
+              <tr>
+                <td><strong>Apple, Inc.</strong></td>
+                <td>App distribution and in-app payment processing</td>
+                <td>Apple ID, payment details (handled entirely by Apple &mdash; we receive only a transaction confirmation)</td>
+                <td>United States</td>
+              </tr>
+              <tr>
+                <td><strong>Google LLC</strong></td>
+                <td>Authentication (if you use Google Sign-In)</td>
+                <td>Email address and basic profile data from your Google account</td>
+                <td>United States</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Important note about AI processing</h3>
+        <p>When you import a recipe from a URL, photo, or pasted text, the content of that import is sent to OpenAI to extract structured recipe data. <strong>Do not paste or photograph content you do not want sent to OpenAI for processing.</strong> OpenAI processes this content under its own API data usage policy, which (as of the effective date of this policy) does not use API inputs to train its models. We do not send your account email, username, or other identifying profile information to OpenAI along with the import.</p>
+
+        <h2>6. How Long We Keep Your Information</h2>
+        <ul>
+          <li><strong>Account and profile data:</strong> kept until you delete your account.</li>
+          <li><strong>Recipes and uploaded photos:</strong> kept until you delete them individually or delete your account.</li>
+          <li><strong>Subscription records:</strong> retained for as long as required by tax and accounting law (typically up to 7 years after the last transaction).</li>
+          <li><strong>Backups:</strong> deleted data may persist in encrypted backups for up to 30 days before being permanently removed.</li>
+        </ul>
+
+        <h2>7. Deleting Your Account</h2>
+        <p>You can permanently delete your account at any time from inside the App: <strong>Settings &rarr; Account &rarr; Delete account</strong>.</p>
+        <p>Deleting your account permanently removes your profile, recipes, categories, uploaded photos, and authentication record. This action cannot be undone.</p>
+        <p>If you cannot access the App for any reason, you can also email us at <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong> to request deletion. We will verify your identity and complete the request within 30 days.</p>
+
+        <h2>8. Your Rights</h2>
+        <p>Depending on where you live, you may have the following rights:</p>
+        <p><strong>For all users:</strong></p>
+        <ul>
+          <li>The right to access the personal information we hold about you.</li>
+          <li>The right to correct inaccurate information (you can edit most of this directly in Settings).</li>
+          <li>The right to delete your account and associated data.</li>
+          <li>The right to export your recipes (you can share any recipe as text or PDF from the App).</li>
+        </ul>
+        <p><strong>For users in the European Economic Area, United Kingdom, and Switzerland (GDPR):</strong> You additionally have the right to restrict or object to processing, the right to data portability, the right to withdraw consent where processing is based on consent, and the right to lodge a complaint with your local data protection authority.</p>
+        <p><strong>For California residents (CCPA / CPRA):</strong> You have the right to know what personal information we collect, the right to delete that information, the right to correct it, and the right to opt out of sale or sharing of personal information. <strong>We do not sell or share personal information</strong> as those terms are defined under California law.</p>
+        <p>To exercise any of these rights, email us at <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>. We will respond within 30 days.</p>
+
+        <h2>9. Children&rsquo;s Privacy</h2>
+        <p>Remy is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If we learn that we have collected personal information from a child under 13, we will delete it. If you believe a child under 13 has provided us with personal information, please contact <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>.</p>
+        <p>Users between 13 and 16 in the European Economic Area should have parental consent before creating an account.</p>
+
+        <h2>10. International Data Transfers</h2>
+        <p>Remy is operated from the United States, and the service providers listed in Section 5 process data in the United States. If you access Remy from outside the United States, your information will be transferred to and processed in the United States. Where required, we rely on Standard Contractual Clauses or equivalent safeguards approved by the European Commission for these transfers.</p>
+
+        <h2>11. Security</h2>
+        <p>We use industry-standard security measures, including encryption in transit (HTTPS / TLS), encryption at rest for stored data, and row-level access controls that prevent users from accessing each other&rsquo;s recipes. No system is perfectly secure, however, and we cannot guarantee absolute security. If we learn of a data breach that affects your information, we will notify you as required by applicable law.</p>
+
+        <h2>12. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. When we do, we will update the &ldquo;Last Updated&rdquo; date at the top. For material changes, we will provide additional notice within the App or by email before the change takes effect.</p>
+
+        <h2>13. Contact</h2>
+        <p>Remy is operated by <strong>[YOUR LEGAL NAME]</strong>, a sole proprietor in Florida, United States.</p>
+        <p>Questions, requests, and complaints can be sent to: <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Contact: <a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></span>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/terms">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

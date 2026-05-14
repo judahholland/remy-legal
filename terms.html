@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terms of Use — Remy</title>
+  <style>
+    @font-face {
+      font-family: 'DM Sans';
+      src: url('/fonts/DMSans.ttf') format('truetype');
+      font-weight: 100 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: 'SandeMore';
+      src: url('/fonts/SandeMoreDemo-Bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root {
+      --color-bg: #F2EDE6;
+      --color-bg-secondary: #E8E0D4;
+      --color-card: #FFFFFF;
+      --color-accent: #3D4F5C;
+      --color-accent-secondary: #D7E4E0;
+      --color-text: #221E1A;
+      --color-text-secondary: #9E8E7E;
+      --color-text-muted: #C8BCA8;
+      --color-border: #DDD5C8;
+
+      --font-display: 'SandeMore', Georgia, serif;
+      --font-editorial: Georgia, 'Times New Roman', Times, serif;
+      --font-ui: 'DM Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+      --radius-card: 16px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: var(--font-ui);
+      font-size: 1rem;
+      line-height: 1.65;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page-wrap {
+      flex: 1;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 24px 64px;
+    }
+
+    @media (min-width: 640px) {
+      .page-wrap {
+        padding-left: 48px;
+        padding-right: 48px;
+      }
+    }
+
+    /* Wordmark */
+    .wordmark {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 2rem;
+      color: var(--color-text);
+      letter-spacing: -0.01em;
+      display: block;
+      margin-bottom: 12px;
+      text-decoration: none;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-block;
+      font-family: var(--font-ui);
+      font-size: 0.9375rem;
+      color: var(--color-accent);
+      text-decoration: none;
+      margin-bottom: 40px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Page heading */
+    h1 {
+      font-family: var(--font-editorial);
+      font-weight: 600;
+      font-size: clamp(1.75rem, 5vw, 2.25rem);
+      line-height: 1.25;
+      color: var(--color-text);
+      margin-bottom: 8px;
+      max-width: 65ch;
+    }
+
+    /* Body content */
+    .content {
+      max-width: 65ch;
+    }
+
+    .content .meta {
+      font-size: 0.9375rem;
+      color: var(--color-text-muted);
+      margin-bottom: 40px;
+    }
+
+    .content p {
+      font-size: 1.0625rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 16px;
+    }
+
+    .content h2 {
+      font-family: var(--font-editorial);
+      font-weight: 600;
+      font-size: 1.1875rem;
+      color: var(--color-text);
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    .content h3 {
+      font-family: var(--font-ui);
+      font-weight: 600;
+      font-size: 1rem;
+      color: var(--color-text);
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    .content ul,
+    .content ol {
+      margin-left: 1.5rem;
+      margin-bottom: 16px;
+    }
+
+    .content li {
+      font-size: 1.0625rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 6px;
+    }
+
+    .content .caps-block {
+      font-size: 0.9375rem;
+      color: var(--color-text-secondary);
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.01em;
+    }
+
+    .content a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--color-border);
+      margin-top: auto;
+      padding: 32px 24px;
+    }
+
+    .footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      font-family: var(--font-ui);
+      font-size: 0.875rem;
+      color: var(--color-text-secondary);
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    @media (min-width: 640px) {
+      .footer-inner {
+        padding-left: 48px;
+        padding-right: 48px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .footer-inner a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    .footer-inner a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="page-wrap">
+      <a href="/" class="wordmark" aria-label="Remy home">Remy</a>
+      <a href="/" class="back-link">&larr; Back</a>
+
+      <h1>Terms of Use</h1>
+
+      <div class="content">
+        <p class="meta">Effective Date: 05/14/2026 &nbsp;&middot;&nbsp; Last Updated: 05/14/2026</p>
+
+        <p>Welcome to Remy. These Terms of Use ("Terms") govern your use of the Remy mobile application (the "App") and any related services we provide. The App is operated by Judah Holland, a sole proprietor based in Florida, United States ("Remy," "we," "us," or "our").</p>
+        <p>By downloading, accessing, or using the App, you agree to these Terms. If you do not agree, do not use the App.</p>
+
+        <h2>1. Eligibility</h2>
+        <p>You must be at least 13 years old to use Remy. If you are between 13 and 18 (or the age of majority in your jurisdiction), you may use the App only with the involvement of a parent or legal guardian who agrees to these Terms on your behalf.</p>
+        <p>If you are accessing the App from the European Economic Area, you must be at least 16 years old, or have verifiable consent from a parent or guardian if younger, as required by local law.</p>
+        <p>You agree to provide accurate information when creating an account and to keep that information up to date.</p>
+
+        <h2>2. Your Account</h2>
+        <p>To use most features of the App, you must create an account. You are responsible for:</p>
+        <ul>
+          <li>Maintaining the confidentiality of your account credentials.</li>
+          <li>All activity that occurs under your account.</li>
+          <li>Notifying us promptly at <a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a> if you suspect unauthorized access.</li>
+        </ul>
+        <p>We are not liable for any loss or damage resulting from your failure to safeguard your account.</p>
+        <p>You may delete your account at any time from Settings → Account → Delete account inside the App. Deletion permanently removes your profile, recipes, categories, and uploaded content. This action cannot be undone.</p>
+
+        <h2>3. License to Use the App</h2>
+        <p>We grant you a limited, non-exclusive, non-transferable, revocable license to download and use the App on devices you own or control, solely for your personal, non-commercial use, in accordance with these Terms and Apple's App Store Terms of Service.</p>
+        <p>This license does not give you the right to:</p>
+        <ul>
+          <li>Copy, modify, distribute, sell, or lease any part of the App.</li>
+          <li>Reverse engineer, decompile, or attempt to extract the source code of the App, except where applicable law expressly permits.</li>
+          <li>Use the App to build a competing product or service.</li>
+          <li>Use automated means (scrapers, bots, scripts) to access or interact with the App.</li>
+          <li>Remove or alter any proprietary notices in the App.</li>
+        </ul>
+
+        <h2>4. Your Content</h2>
+        <p>The App allows you to save recipes from URLs, photos, pasted text, and manual entry ("Your Content"). You retain all rights to Your Content.</p>
+        <p>By using the App, you grant us a limited, worldwide, royalty-free license to store, process, display, and back up Your Content solely to provide the App's features to you. This license ends when you delete Your Content or your account, except for backup copies that are deleted within 30 days as described in our Privacy Policy.</p>
+        <p>You are solely responsible for Your Content. You represent and warrant that:</p>
+        <ul>
+          <li>You have the right to save and store the content you import or upload.</li>
+          <li>Your Content does not infringe any third party's intellectual property, privacy, or other rights.</li>
+          <li>Your Content complies with applicable law.</li>
+        </ul>
+        <p>Important note about imported recipes: When you import a recipe from a website, you are responsible for respecting the original publisher's copyright. Recipes themselves (lists of ingredients) are generally not copyrightable in the United States, but the creative expression around them — headnotes, photography, instructional voice — may be. We recommend using the import feature for personal use only, and not republishing imported content.</p>
+
+        <h2>5. Sharing Recipes</h2>
+        <p>The App allows you to share recipes with other Remy users via link, as text, or as PDF. When you share a recipe:</p>
+        <ul>
+          <li>The recipient receives a copy of the recipe content you choose to share.</li>
+          <li>Shared recipes may be saved by the recipient to their own recipe library.</li>
+          <li>We do not control how recipients use shared content.</li>
+        </ul>
+        <p>Recipes are not publicly searchable or discoverable through Remy. Sharing is point-to-point between you and your chosen recipients.</p>
+
+        <h2>6. Acceptable Use</h2>
+        <p>You agree not to use the App to:</p>
+        <ul>
+          <li>Violate any applicable law or regulation.</li>
+          <li>Upload content that is illegal, harmful, threatening, abusive, harassing, defamatory, obscene, hateful, or otherwise objectionable.</li>
+          <li>Upload content that infringes the intellectual property, privacy, or other rights of any third party.</li>
+          <li>Upload malware, viruses, or any code designed to disrupt or damage the App or other users' devices.</li>
+          <li>Attempt to gain unauthorized access to other users' accounts or to our systems.</li>
+          <li>Use the App in a way that imposes an unreasonable load on our infrastructure.</li>
+          <li>Submit false or misleading information.</li>
+        </ul>
+        <p>We may suspend or terminate your account at our discretion if we believe you have violated these Terms or applicable law, with or without notice.</p>
+
+        <h2>7. AI-Powered Recipe Extraction</h2>
+        <p>The App uses artificial intelligence to extract structured recipe data from URLs, photos, and pasted text. You acknowledge and agree that:</p>
+        <ul>
+          <li>AI extraction is not perfect. Results may contain errors, omissions, or inaccuracies.</li>
+          <li>You are responsible for reviewing and verifying every imported recipe before saving or cooking from it.</li>
+          <li>We make no guarantees about the accuracy of extracted ingredient quantities, measurements, cooking times, or instructions.</li>
+          <li>Recipe content you submit for extraction is sent to a third-party AI processor (OpenAI) as described in our Privacy Policy.</li>
+        </ul>
+        <p>Do not rely on AI-extracted content for matters of food safety, allergens, or dietary restrictions without independent verification.</p>
+
+        <h2>8. Subscriptions and Payments</h2>
+
+        <h3>8.1 Free and paid tiers</h3>
+        <p>The App is available in two tiers:</p>
+        <ul>
+          <li><strong>Free Plan:</strong> Includes a limited number of recipe imports (currently 5 total).</li>
+          <li><strong>Remy Unlimited:</strong> A paid subscription that unlocks unlimited recipe imports and any other features designated as part of the subscription.</li>
+        </ul>
+
+        <h3>8.2 Subscription terms (as required by Apple)</h3>
+        <ul>
+          <li><strong>Title of subscription:</strong> Remy Unlimited.</li>
+          <li><strong>Subscription options and pricing:</strong>
+            <ul>
+              <li>Monthly: $4.99 USD per month</li>
+              <li>Annual: $49.99 USD per year</li>
+            </ul>
+            Prices in other currencies will be displayed at the time of purchase and may vary based on your local App Store pricing.
+          </li>
+          <li><strong>Length of subscription period:</strong> One month or one year from the date of purchase, depending on the option selected.</li>
+          <li><strong>Payment method:</strong> Payment will be charged to your Apple ID account at confirmation of purchase.</li>
+          <li><strong>Auto-renewal:</strong> Your subscription automatically renews for the same period (one month or one year) unless auto-renew is turned off at least 24 hours before the end of the current period.</li>
+          <li><strong>Renewal charge:</strong> Your Apple ID account will be charged for renewal within 24 hours prior to the end of the current period at the price of the plan you selected.</li>
+          <li><strong>Managing your subscription:</strong> You can manage and cancel your subscription by going to your Apple ID account settings on your device. Cancellation will take effect at the end of the current paid period; you will retain access to Remy Unlimited until then.</li>
+          <li><strong>Free trials or introductory offers (if offered):</strong> Any unused portion of a free trial period is forfeited when you purchase a subscription, where applicable.</li>
+        </ul>
+
+        <h3>8.3 Refunds</h3>
+        <p>All purchases are processed by Apple. Refund requests are handled by Apple under their policies. We do not have the ability to issue refunds directly. You can request a refund at <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+        <h3>8.4 Price and feature changes</h3>
+        <p>We may change subscription prices or features from time to time. If we change the price of an existing subscription, we will provide notice before the change takes effect, and you will have the option to cancel before the new price applies.</p>
+
+        <h2>9. Intellectual Property</h2>
+        <p>The App, including its design, code, branding, text (other than Your Content), graphics, and trademarks, is owned by Remy or its licensors and is protected by copyright, trademark, and other intellectual property laws.</p>
+        <p>These Terms do not grant you any rights to our trademarks, logos, or brand elements without our prior written consent.</p>
+
+        <h2>10. Third-Party Services</h2>
+        <p>The App relies on third-party services to operate, including but not limited to Supabase (database and authentication), OpenAI (AI processing), RevenueCat (subscription management), Apple (distribution and payments), and, where enabled, Google (sign-in). These services are governed by their own terms and privacy policies. We are not responsible for the practices of these third parties.</p>
+        <p>Imported recipe URLs may link to third-party websites. We do not control and are not responsible for the content of third-party websites.</p>
+
+        <h2>11. Disclaimers</h2>
+        <p class="caps-block">The App is provided "as is" and "as available," without warranties of any kind, either express or implied. To the fullest extent permitted by law, we disclaim all warranties, including warranties of merchantability, fitness for a particular purpose, non-infringement, and any warranties arising out of course of dealing or usage of trade.</p>
+        <p class="caps-block">We do not warrant that the App will be uninterrupted, error-free, secure, or free from viruses or other harmful components, or that defects will be corrected.</p>
+        <p class="caps-block">We do not warrant the accuracy, completeness, or usefulness of any recipe content, including AI-extracted content. You use the App and any content it produces at your own risk.</p>
+        <p>Food safety disclaimer: Remy is a recipe organization tool. We do not provide nutritional, dietary, allergen, or medical advice. You are solely responsible for evaluating recipes for safety, suitability, and accuracy before preparing or consuming any food.</p>
+
+        <h2>12. Limitation of Liability</h2>
+        <p class="caps-block">To the fullest extent permitted by law, Remy and its operators will not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits, revenue, data, or goodwill, arising out of or in connection with your use of the App, even if we have been advised of the possibility of such damages.</p>
+        <p class="caps-block">Our total liability to you for any claim arising out of or relating to these Terms or the App is limited to the greater of (a) the amount you paid us in the twelve months before the claim arose, or (b) one hundred U.S. dollars ($100).</p>
+        <p>Some jurisdictions do not allow the exclusion or limitation of certain damages, so some of the above limitations may not apply to you. In such jurisdictions, our liability is limited to the maximum extent permitted by law.</p>
+
+        <h2>13. Indemnification</h2>
+        <p>You agree to defend, indemnify, and hold harmless Remy and its operators from and against any claims, liabilities, damages, losses, and expenses (including reasonable attorneys' fees) arising out of or in any way connected with:</p>
+        <ul>
+          <li>Your use of the App.</li>
+          <li>Your violation of these Terms.</li>
+          <li>Your violation of any third-party right, including intellectual property or privacy rights.</li>
+          <li>Your Content.</li>
+        </ul>
+
+        <h2>14. Termination</h2>
+        <p>You may stop using the App and delete your account at any time, as described in Section 2.</p>
+        <p>We may suspend or terminate your access to the App at any time, with or without notice, if we believe you have violated these Terms, if required by law, or if we discontinue the App.</p>
+        <p>Upon termination, your right to use the App ends immediately. Sections that by their nature should survive termination (including Sections 4, 9, 11, 12, 13, and 16) will survive.</p>
+
+        <h2>15. Changes to These Terms</h2>
+        <p>We may update these Terms from time to time. When we do, we will update the "Last Updated" date at the top. For material changes, we will provide additional notice within the App or by email before the change takes effect. Your continued use of the App after the new Terms take effect constitutes your acceptance of them.</p>
+
+        <h2>16. Governing Law and Disputes</h2>
+        <p>These Terms are governed by the laws of the State of Florida, United States, without regard to its conflict-of-law principles.</p>
+        <p>Any dispute arising out of or relating to these Terms or the App will be resolved in the state or federal courts located in Florida, and you consent to the exclusive jurisdiction of those courts. Nothing in this section limits your right to bring a complaint with a consumer protection authority in your country of residence if applicable law permits.</p>
+
+        <h2>17. Apple-Specific Terms</h2>
+        <p>These Terms are between you and Remy, not Apple. Apple is not responsible for the App or its content.</p>
+        <p>You and Remy acknowledge that:</p>
+        <ul>
+          <li>Apple has no obligation to provide maintenance or support for the App.</li>
+          <li>In the event of any failure of the App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price (if any) for the App. To the maximum extent permitted by law, Apple has no other warranty obligation with respect to the App.</li>
+          <li>Apple is not responsible for addressing any claims by you or any third party relating to the App, including product liability claims, claims that the App fails to conform to any applicable legal or regulatory requirement, and claims arising under consumer protection or similar legislation.</li>
+          <li>Apple is not responsible for the investigation, defense, settlement, or discharge of any third-party intellectual property infringement claim related to the App.</li>
+          <li>You represent that you are not located in a country subject to a U.S. government embargo or designated by the U.S. government as a "terrorist supporting" country, and that you are not listed on any U.S. government list of prohibited or restricted parties.</li>
+          <li>Apple and Apple's subsidiaries are third-party beneficiaries of these Terms, and upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary.</li>
+        </ul>
+
+        <h2>18. Miscellaneous</h2>
+        <p><strong>Entire Agreement.</strong> These Terms, together with our Privacy Policy, constitute the entire agreement between you and Remy regarding the App and supersede any prior agreements.</p>
+        <p><strong>Severability.</strong> If any provision of these Terms is found unenforceable, the remaining provisions will remain in full force and effect.</p>
+        <p><strong>No Waiver.</strong> Our failure to enforce any provision of these Terms will not constitute a waiver of that provision.</p>
+        <p><strong>Assignment.</strong> You may not assign or transfer these Terms without our prior written consent. We may assign these Terms at our discretion.</p>
+        <p><strong>Contact.</strong> Questions about these Terms can be sent to <a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a>.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <span>Contact: <a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></span>
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/privacy">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
