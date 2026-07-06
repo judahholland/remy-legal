@@ -269,34 +269,34 @@
       <h1>Privacy Policy for Remy</h1>
       <p class="meta">
         <strong>Effective Date:</strong> 05/14/2026<br>
-        <strong>Last Updated:</strong> 05/14/2026
+        <strong>Last Updated:</strong> 07/06/2026
       </p>
 
       <div class="content">
-        <p>This Privacy Policy describes how Remy (&ldquo;Remy,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares information when you use the Remy mobile application (the &ldquo;App&rdquo;). Remy is operated by [YOUR LEGAL NAME], a sole proprietor based in Florida, United States.</p>
+        <p>This Privacy Policy describes how Remy (&ldquo;Remy,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) collects, uses, and shares information when you use the Remy mobile application (the &ldquo;App&rdquo;). Remy is operated by Judah Holland, a sole proprietor based in Florida, United States.</p>
 
         <p>If you have any questions about this policy, contact us at <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>.</p>
 
         <h2>1. Summary</h2>
-        <p>Remy is a personal recipe organizer. We collect the information needed to create your account, store the recipes you choose to save, and process recipe imports from URLs, photos, and pasted text. We do not sell your personal information, we do not use it for advertising, and we do not share your recipes publicly.</p>
+        <p>Remy is a personal recipe organizer. We collect the information needed to create your account, store the recipes you choose to save, and process recipe imports from URLs, photos, pasted text, and social media videos. We do not sell your personal information, we do not use it for advertising, and we do not share your recipes publicly.</p>
 
         <h2>2. Information We Collect</h2>
 
         <h3>2.1 Information you provide directly</h3>
         <ul>
           <li><strong>Account information:</strong> your email address and password when you create an account. If you sign in with Google, we receive your email address and basic profile information from Google.</li>
-          <li><strong>Profile information:</strong> your chosen username, first name, last name, and an optional profile photo (avatar) you upload.</li>
-          <li><strong>Recipe content:</strong> the recipes you save, including titles, descriptions, ingredients, instructions, notes, categories, servings, prep and cook times, source URLs, and recipe photos you upload or capture.</li>
-          <li><strong>Recipe import sources:</strong> URLs you paste, text you paste, and photos of recipes you capture or select, which we process to extract structured recipe data.</li>
-          <li><strong>Preferences:</strong> your unit preference (imperial or metric), appearance preference (light, dark, or system), and home-screen display preferences.</li>
+          <li><strong>Profile information:</strong> your chosen username, first name, last name, and an optional profile photo you upload.</li>
+          <li><strong>Recipe content:</strong> the recipes you save, including titles, descriptions, ingredients, instructions, notes, categories, servings, prep and cook times, source URLs, and recipe photos.</li>
+          <li><strong>Recipe import sources:</strong> URLs you paste, text you paste, photos of recipes, and social media video links you share to the App, which we process to extract structured recipe data.</li>
+          <li><strong>Preferences:</strong> your unit preference (imperial or metric), appearance preference, and display preferences.</li>
           <li><strong>Communications:</strong> if you email us for support, we receive the contents of your message and your email address.</li>
         </ul>
 
         <h3>2.2 Information collected automatically</h3>
         <ul>
           <li><strong>Authentication and session data:</strong> when you sign in, our authentication provider issues session tokens and records sign-in events for security purposes.</li>
-          <li><strong>Subscription data:</strong> if you subscribe to Remy Unlimited, our subscription processor records your subscription status, purchase events, renewal status, and a pseudonymous user identifier. We do <strong>not</strong> receive your credit card number or payment details &mdash; those are handled by Apple&rsquo;s App Store.</li>
-          <li><strong>Device information for crash and error logs:</strong> if the App crashes or encounters an error, basic technical information (device model, operating system version, App version, and error details) may be recorded so we can diagnose issues.</li>
+          <li><strong>Subscription data:</strong> if you subscribe to Remy Unlimited, our subscription processor records your subscription status, purchase events, renewal status, and a pseudonymous user identifier. We do <strong>not</strong> receive your credit card number &mdash; those are handled entirely by Apple&rsquo;s App Store.</li>
+          <li><strong>Crash and error logs:</strong> if the App crashes, basic technical information (device model, OS version, App version, and error details) may be recorded so we can diagnose issues.</li>
         </ul>
 
         <h3>2.3 Information we do <strong>not</strong> collect</h3>
@@ -354,6 +354,18 @@
                 <td>United States</td>
               </tr>
               <tr>
+                <td><strong>Google Gemini (Google LLC)</strong></td>
+                <td>AI analysis of social media videos (Instagram, Facebook, TikTok)</td>
+                <td>Video content from publicly shared URLs (no account identifiers attached)</td>
+                <td>United States</td>
+              </tr>
+              <tr>
+                <td><strong>RapidAPI</strong></td>
+                <td>Fetching social media video content for extraction</td>
+                <td>Video URLs shared by the user to the App</td>
+                <td>United States</td>
+              </tr>
+              <tr>
                 <td><strong>RevenueCat, Inc.</strong></td>
                 <td>Subscription management and entitlement tracking</td>
                 <td>Pseudonymous user ID, subscription events, purchase status</td>
@@ -362,7 +374,7 @@
               <tr>
                 <td><strong>Apple, Inc.</strong></td>
                 <td>App distribution and in-app payment processing</td>
-                <td>Apple ID, payment details (handled entirely by Apple &mdash; we receive only a transaction confirmation)</td>
+                <td>Payment handled entirely by Apple &mdash; we receive only a transaction confirmation</td>
                 <td>United States</td>
               </tr>
               <tr>
@@ -376,7 +388,8 @@
         </div>
 
         <h3>Important note about AI processing</h3>
-        <p>When you import a recipe from a URL, photo, or pasted text, the content of that import is sent to OpenAI to extract structured recipe data. <strong>Do not paste or photograph content you do not want sent to OpenAI for processing.</strong> OpenAI processes this content under its own API data usage policy, which (as of the effective date of this policy) does not use API inputs to train its models. We do not send your account email, username, or other identifying profile information to OpenAI along with the import.</p>
+        <p>When you import a recipe from a URL, photo, or pasted text, the content of that import is sent to OpenAI to extract structured recipe data. When you import a recipe from an Instagram Reel, Facebook video, or TikTok, the video URL is first sent to RapidAPI to retrieve the video content, which is then sent to Google Gemini for AI-powered extraction.</p>
+        <p><strong>Do not share content you do not want processed by these services.</strong> Neither OpenAI nor Google Gemini uses your submitted content to train their models under their current API terms. Content sent for processing is not stored by these services beyond what is needed to complete the request. We do not send your account email, username, or other identifying profile information alongside any import. For details, review <a href="https://openai.com/policies/api-data-usage-policies">OpenAI&rsquo;s API usage policies</a> and <a href="https://ai.google.dev/gemini-api/terms">Google&rsquo;s Generative AI terms</a>.</p>
 
         <h2>6. How Long We Keep Your Information</h2>
         <ul>
@@ -405,7 +418,7 @@
         <p>To exercise any of these rights, email us at <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>. We will respond within 30 days.</p>
 
         <h2>9. Children&rsquo;s Privacy</h2>
-        <p>Remy is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If we learn that we have collected personal information from a child under 13, we will delete it. If you believe a child under 13 has provided us with personal information, please contact <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>.</p>
+        <p>Remy is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong>.</p>
         <p>Users between 13 and 16 in the European Economic Area should have parental consent before creating an account.</p>
 
         <h2>10. International Data Transfers</h2>
@@ -418,7 +431,7 @@
         <p>We may update this Privacy Policy from time to time. When we do, we will update the &ldquo;Last Updated&rdquo; date at the top. For material changes, we will provide additional notice within the App or by email before the change takes effect.</p>
 
         <h2>13. Contact</h2>
-        <p>Remy is operated by <strong>[YOUR LEGAL NAME]</strong>, a sole proprietor in Florida, United States.</p>
+        <p><strong>Judah Holland</strong></p>
         <p>Questions, requests, and complaints can be sent to: <strong><a href="mailto:judahrobert123@gmail.com">judahrobert123@gmail.com</a></strong></p>
       </div>
     </div>
